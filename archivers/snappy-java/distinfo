@@ -1,6 +1,5 @@
-SHA256 (snappy-1.0.4.tar.gz) = 4ad91adb1592b6de67ecaad2ade6c34b9cf98a0bbc74ac8786b520b529b3bf61
-SIZE (snappy-1.0.4.tar.gz) = 1676541
-SHA256 (FreeBSD-snappy-1.0.4.1-maven-repository.tar.gz) = 1d258eedabd2ff74954988b7d404ac803f55687b916f697179489c3a4cb0e243
-SIZE (FreeBSD-snappy-1.0.4.1-maven-repository.tar.gz) = 8290287
-SHA256 (xerial-snappy-java-snappy-java-1.0.4.1_GH0.tar.gz) = efb6d747d754779113b0c023886803c2daedb585b6ec80dd71ffa6a40a083f14
-SIZE (xerial-snappy-java-snappy-java-1.0.4.1_GH0.tar.gz) = 5475057
+TIMESTAMP = 1464512332
+SHA256 (xerial-snappy-java-1.1.2.4_GH0.tar.gz) = 234d6d5b1a101fa9769ee0ed73aba438cb9ee546f570e3d6557ab4e364b4d06c
+SIZE (xerial-snappy-java-1.1.2.4_GH0.tar.gz) = 2229049
+SHA256 (google-snappy-1ff9be9_GH0.tar.gz) = 1164b9951fcd1a6b08e90555c3981214fa308b6d55eef6681d71c1dbf63e0966
+SIZE (google-snappy-1ff9be9_GH0.tar.gz) = 1111897
