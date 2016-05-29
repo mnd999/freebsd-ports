@@ -1,0 +1,11 @@
+--- Makefile	2016-05-29 10:07:14.271171102 +0100
++++ Makefile.orig	2016-05-29 10:06:47.851172949 +0100
+@@ -40,7 +40,7 @@
+ $(SNAPPY_UNPACKED): $(SNAPPY_ARCHIVE)
+ 	$(TAR) xvfz $< -C $(TARGET)	
+ 	touch $@
++	cd  $(SNAPPY_SRC_DIR) && ./autogen.sh && ./configure
+-	cd  $(SNAPPY_SRC_DIR) && ./configure
+ 
+ $(SNAPPY_GIT_UNPACKED):
+ 	@mkdir -p $(SNAPPY_SRC_DIR)
