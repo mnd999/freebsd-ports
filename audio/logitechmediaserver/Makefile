@@ -59,8 +59,7 @@ DOCFILES=	Changelog*.html Installation.txt License*.txt
 CONFFILES=	convert.conf types.conf
 
 PLIST_SUB=	SLIMDIR=${SLIMDIR} \
-		SLIMDBDIR=${SLIMDBDIR} \
-		ARCH=${ARCH}
+		SLIMDBDIR=${SLIMDBDIR} 
 
 SUB_FILES=	Custom.pm \
 		custom-convert.conf \
@@ -107,8 +106,8 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/Bin/dbish ${STAGEDIR}${PREFIX}/${SLIMDIR}/Bin/
 	(cd ${WRKSRC_vendor}/CPAN/build && \
 		${COPYTREE_SHARE} arch ${STAGEDIR}${PREFIX}/${SLIMDIR}/CPAN)
-	(cd ${WRKSRC_vendor}/CPAN/build/5.20/lib/perl5 && \
-		${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/${SLIMDIR}/CPAN/arch/5.20/)
+	(cd ${WRKSRC_vendor}/CPAN/build/${PERL_VER}/lib/perl5 && \
+		${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/${SLIMDIR}/CPAN/arch/${PERL_VER}/)
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	(cd ${WRKSRC} && ${INSTALL_DATA} ${DOCFILES} ${STAGEDIR}${DOCSDIR})
