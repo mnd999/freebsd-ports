@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	logitechmediaserver
-PORTVERSION=	7.9.0.g2016.09.30
+PORTVERSION=	7.9.1.g2017.07.11
 PORTREVISION=	2
 CATEGORIES=	audio
 
@@ -19,8 +19,8 @@ BUILD_DEPENDS=	nasm:devel/nasm \
 LIB_DEPENDS=	libgd.so:graphics/gd
 
 USE_GITHUB=	yes
-GH_TUPLE=	Logitech:slimserver:c835a1f \
-		Logitech:slimserver-vendor:14cc392:vendor
+GH_TUPLE=	Logitech:slimserver:762b5cb \
+		Logitech:slimserver-vendor:1463b00:vendor
 
 RESTRICTED=	Contains non-redistributable firmware, documentation, and images
 
