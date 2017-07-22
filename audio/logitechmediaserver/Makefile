@@ -110,7 +110,7 @@ do-install:
 		${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/${SLIMDIR}/CPAN/arch/${PERL_VER}/)
 	(cd ${STAGEDIR}${PREFIX}/${SLIMDIR} && \
 		${FIND} . -name \*.orig -delete -o -name \*.bak -delete -o -name \*.packlist -delete && \
-		${FIND} ./CPAN/arch/ -d 1 ! -name ${PERL_VER} -delete && \
+		${FIND} ./CPAN/arch/ ! -path './CPAN/arch/${PERL_VER}*' -delete && \
 		${RM} -r -- Bin/* && \
 		${RM} -- ${CONFFILES} ${DOCFILES})
 	(cd ${STAGEDIR}${PREFIX}/${SLIMDIR}/CPAN/arch/${PERL_VER} && \
