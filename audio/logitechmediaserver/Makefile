@@ -100,7 +100,6 @@ PLIST_SUB+=	AMD64_ONLY="@comment "
 
 do-build:
 	cd ${WRKSRC_vendor}/CPAN && ./buildme.sh ${CONTRIB_FLAGS}
-	cd ${WRKSRC}/CPAN/arch && ${CP} -R 5.22 5.24
 
 do-install:
 	(cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/${SLIMDIR})
