@@ -1087,6 +1087,7 @@ etc/newsyslog.conf.d/logitechmediaserver.conf
 %%AMD64_ONLY%%%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/YAML/XS/LibYAML/LibYAML.so
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/share/dist/DBD-SQLite/sqlite3.c
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/auto/share/dist/DBD-SQLite/sqlite3.h
+%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/common/sense.pm
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/dbixs_rev.pl
 %%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/%%ARCHNAME%%/perllocal.pod
 %%AMD64_ONLY%%%%SLIMDIR%%/CPAN/arch/%%PERL_VER%%/common/sense.pm

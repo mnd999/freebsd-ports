@@ -114,6 +114,7 @@ do-install:
 		${RM} -- ${CONFFILES} ${DOCFILES})
 	(cd ${STAGEDIR}${PREFIX}/${SLIMDIR}/CPAN/arch/${PERL_VER} && \
 		${RM} -r -- arm-linux-gnueabihf-thread-multi-64int && \
+		${RM} -r -- aarch64-linux-thread-multi && \
 		${RM} -r -- i386-linux-thread-multi-64int && \
 		${RM} -r -- x86_64-linux-thread-multi)
 .for _CONF in ${CONFFILES}
